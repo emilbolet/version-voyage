@@ -8,49 +8,46 @@ This guide aims to explore the nuances of these Git branching strategies, offeri
 
 ## Git Branching Strategies Comparison
 
-### 1. GitFlow
+### [GitFlow](../branching-strategy/gitflow.md)
 - **Main Concept**: Defines a strict branching model around the project release, involving `feature`, `develop`, `release`, `hotfix`, and `master` branches.
 - **Use Case**: Projects with a scheduled release cycle.
 - **Pros**: Clear guidelines for version management, supports parallel development.
 - **Cons**: Complexity, may be overkill for smaller projects.
-[Learn More](../branching-strategy/gitflow.md)
 
-### 2. GitHub Flow
+
+### [GitHub Flow](../branching-strategy/github-flow.md)
 - **Main Concept**: Simplified workflow encouraging continuous delivery, using a `main` branch, feature branches, and pull requests.
 - **Use Case**: Projects that deploy frequently.
 - **Pros**: Simplicity, facilitates rapid development cycles.
 - **Cons**: Less suitable for complex projects with parallel releases.
-[Learn More](../branching-strategy/github-flow.md)
 
-### 3. GitLab Flow
+
+### [GitLab Flow](../branching-strategy/gitlab-flow.md)
 - **Main Concept**: Extends GitHub Flow by adding environment and release branches for better management.
 - **Use Case**: CI/CD environments, balancing simplicity and deployment control.
 - **Pros**: Control over deployments, integrates with GitLab CI/CD.
 - **Cons**: Slightly more complex, requires disciplined branch management.
-[Learn More](../branching-strategy/gitlab-flow.md)
 
-### 4. Feature Branch Workflow
+
+### [Feature Branch Workflow](../branching-strategy/feature-branch-workflow.md)
 - **Main Concept**: New branches for each feature or fix, merged back into the main branch upon completion.
 - **Use Case**: Teams not deploying frequently, working on longer-term features.
 - **Pros**: Stable main branch, independent feature development.
 - **Cons**: Merging large or long-lived branches can be challenging.
-[Learn More](../branching-strategy/feature-branch-workflow.md)
 
 
-### 5. Release Flow
+### [Release Flow](../branching-strategy/release-flow.md)
 - **Main Concept**: Combines GitFlow and GitHub Flow aspects, focusing on release management through release branches.
 - **Use Case**: Large-scale projects with complex releases.
 - **Pros**: Clear release management structure, supports various deployment strategies.
 - **Cons**: Complexity may not suit smaller teams/projects.
-[Learn More](../branching-strategy/release-flow.md)
 
 
-### 6. Trunk Based Development (TBD)
+### [Trunk Based Development (TBD)](../branching-strategy/trunk-based-development.md)
 - **Main Concept**: Short-lived branches or direct trunk work, frequent merges.
 - **Use Case**: Continuous integration, high collaboration, and quick iterations.
 - **Pros**: Reduces integration issues, quick feedback cycles.
 - **Cons**: Requires mature CI/CD setup, may not fit all workflows or complex releases.
-[Learn More](../branching-strategy/trunk-based-development.md)
 
 
 ## Conclusion on Git Branching Strategies
