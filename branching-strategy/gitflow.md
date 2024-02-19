@@ -12,6 +12,8 @@ Git Flow is a branching model that defines a strict branching structure designed
 - **Complexity:** Can be overkill for small projects due to its complexity and the number of branches involved.
 - **Learning Curve:** New team members may require time to fully understand and effectively use this model.
 
+## Graph
+
 ```mermaid
 gitGraph:
     commit tag: "v.01"

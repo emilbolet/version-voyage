@@ -10,3 +10,23 @@ A simpler alternative to Git Flow, focusing on the continuous delivery model. It
 
 - **Less structure:** Might not be suitable for projects that require detailed release management or have complex deployment stages.
 - **Risk of Conflicts:** High chance of merge conflicts if not managed properly, especially in fast-paced development environments.
+
+## Graph 
+
+```mermaid
+gitGraph
+    commit id:"C0" tag:"Initial commit"
+    branch featureA
+    checkout featureA
+    commit id:"C1"
+    commit id:"C2"
+    checkout main
+    merge featureA
+    branch featureB
+    checkout featureB
+    commit id:"C3"
+    commit id:"C4"
+    checkout main
+    merge featureB
+
+```

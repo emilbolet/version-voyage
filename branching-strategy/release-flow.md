@@ -11,3 +11,30 @@ Release Flow is a branching strategy that Microsoft developed for managing the d
 
 - **Complexity:** More complex than simpler models like GitHub Flow, requiring careful branch management and coordination.
 - **Overhead:** The creation of separate branches for each release can add overhead in terms of branch management and CI/CD pipeline configurations.
+
+## Graph
+
+```mermaid
+gitGraph
+    commit id:"C0" tag:"Initial commit on main"
+    branch feature1
+    checkout feature1
+    commit id:"C1"
+    checkout main
+    merge feature1
+    branch release_v1.0
+    checkout release_v1.0
+    commit id:"R1"
+    checkout main
+    merge release_v1.0
+    branch feature2
+    checkout feature2
+    commit id:"C2"
+    checkout main
+    merge feature2
+    branch release_v1.1
+    checkout release_v1.1
+    commit id:"R2"
+    checkout main
+    merge release_v1.1
+```

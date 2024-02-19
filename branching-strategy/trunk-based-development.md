@@ -11,3 +11,34 @@ Speed: Accelerates the development process by reducing the overhead of managing 
 
 - **Risk of Unstable Main Branch:** The trunk can become unstable if not properly managed with rigorous automated testing and code review practices.
 - **Requires Discipline:** Developers need to be disciplined in their development practices, ensuring that code committed to the trunk is always in a releasable state.
+
+
+## Graph
+
+```mermaid
+gitGraph
+    options
+    {
+      "showCommitLabel": false
+    }
+    end
+    commit id:"C0" tag:"Initial commit"
+    branch feature1
+    checkout feature1
+    commit id:"C1"
+    checkout main
+    merge feature1
+    commit id:"C2" tag:"Deploy"
+    branch feature2
+    checkout feature2
+    commit id:"C3"
+    checkout main
+    merge feature2
+    commit id:"C4" tag:"Deploy"
+    branch hotfix
+    checkout hotfix
+    commit id:"H1"
+    checkout main
+    merge hotfix
+    commit id:"C5" tag:"Deploy"
+```
