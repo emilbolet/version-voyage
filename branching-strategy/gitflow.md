@@ -1,5 +1,5 @@
 # Git Flow
-Git Flow is a branching model that defines a strict branching structure designed for projects that have a scheduled release cycle. It involves multiple branches for different purposes: ``feature``, ``develop``, ``release``, ``hotfix``, and ``master``.
+Git Flow is a branching model that defines a strict branching structure designed for projects that have a scheduled release cycle. It involves multiple branches for different purposes: ``feature``, ``develop``, ``release``, ``hotfix``, and ``main``.
 
 ## Pros:
 
