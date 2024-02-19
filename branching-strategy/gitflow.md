@@ -13,24 +13,29 @@ Git Flow is a branching model that defines a strict branching structure designed
 - **Learning Curve:** New team members may require time to fully understand and effectively use this model.
 
 ```mermaid
-gitGraph
-  commit id:"master" tag:"Master"
-  branch develop
-  commit id:"develop" tag:"Develop"
-  branch feature1
-  checkout develop
-  commit
-  checkout feature1
-  commit
-  checkout develop
-  merge feature1
-  branch release
-  checkout develop
-  commit
-  checkout release
-  commit tag:"Release"
-  checkout master
-  merge release
-  commit tag:"Hotfix"
-  merge develop
+gitGraph:
+    commit tag: "v.01"
+    branch develop
+    checkout develop
+    commit
+    branch feature/feature1
+    checkout feature/feature1
+    commit
+    checkout develop
+    merge feature/feature1
+    branch release/v1.0
+    checkout release/v1.0
+    commit
+    checkout develop
+    merge release/v1.0
+    checkout main
+    merge release/v1.0 tag: "v1.0"
+    commit
+    branch hotfix/hotfix1
+    checkout hotfix/hotfix1
+    commit
+    checkout main
+    merge hotfix/hotfix1 tag: "v1.1"
+    checkout develop
+    merge hotfix/hotfix1
 ```
