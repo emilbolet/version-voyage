@@ -6,7 +6,7 @@ const config: DocsThemeConfig = {
   project: {
     link: 'https://github.com/emilbolet',
   },
-  docsRepositoryBase: 'https://github.com/emilbolet',
+  docsRepositoryBase: 'https://github.com/version-voyage',
   footer: {
     text: 'Emil Bolet',
   },
